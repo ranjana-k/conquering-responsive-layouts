@@ -72,7 +72,7 @@ h3 {
   width: 100%;
 }
 .col + .col {
-  margin-left: 40px;
+  margin-top: 30px;
 }
 section {
   padding: 5rem 0rem;
@@ -88,14 +88,15 @@ section {
 }
 .hero__body {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .hero__heading {
-  font-size: 3.7rem;
+  font-size: 3.625rem;
   line-height: 1.2;
   color: #a59678;
+  margin-bottom: 2rem;
 }
 .hero__heading span {
   color: #fff;
@@ -103,20 +104,78 @@ section {
 
 .hero__desc p {
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
+
+.hero__desc--button {
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  background-color: #a59678;
+  /* display: inline-block; */
+}
+
+/* Home Page Section 2 */
 .services {
   background-color: #f0f0f0;
 }
 
+.services-card {
+  text-align: center;
+}
+
+.services-card__title {
+  color: #a59678;
+  font-size: 1.875rem;
+  margin-bottom: 20px;
+}
+.services-card__desc {
+  font-size: 1.125rem;
+  padding: 0 0.8em;
+}
+
+/*footer*/
+
+.footer__content {
+}
 @media (min-width: 700px) {
+  .hero__heading {
+    font-size: 4.625rem;
+  }
+
+  .services__body {
+    display: flex;
+    flex-direction: row;
+  }
+  .col + .col {
+    margin-top: 0;
+    margin-left: 30px;
+  }
 }
 
 @media (min-width: 1000px) {
+  .hero__body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   .hero__heading {
     font-size: 5.625rem;
   }
-
+  .hero__title {
+    width: 50%;
+  }
+  .hero__desc {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
   section {
     padding: 5rem 0rem;
+  }
+  .hero__desc--button {
+    margin-bottom: 0;
   }
 }
